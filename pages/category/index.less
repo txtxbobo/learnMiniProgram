@@ -1,0 +1,58 @@
+pages{
+  height: 100%;
+}
+.category{
+  height: 100%;
+  .cates_container{
+    height: calc(100vh - 90rpx);
+    display: flex;
+    .left_menu{
+      // display: block;
+      flex: 2;
+      // background-color: antiquewhite;
+      .menu_item{
+        height: 80rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30rpx;
+      }
+      .active{
+        color: var(--themeColor);
+        border-left: 5rpx solid currentColor;
+      }
+    }
+    .right_content{
+      flex: 5;
+      // background-color: aqua;
+      .goods_group{
+        .goods_title{
+          height: 80rpx;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .delimitar{
+            color: #ccc;
+            padding: 0 10rpx;
+          }
+          .title{
+          }
+        }
+        .goods_list{
+          display: flex;
+          // 换行
+          flex-wrap: wrap;
+          navigator{
+            width: 33.33%;
+            text-align: center;
+            image{
+              width: 50%;
+            }
+            .goods_name{
+            }
+          }
+        }
+      }
+    }
+  }
+}
