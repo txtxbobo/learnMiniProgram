@@ -57,6 +57,36 @@
         {
           "name": "个人中心",
           "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单查询",
+          "pathName": "pages/order/index",
+          "query": "type=1",
+          "scene": null
+        },
+        {
+          "name": "商品 收藏",
+          "pathName": "pages/collect/index",
+          "query": "type=1",
+          "scene": null
+        },
+        {
+          "name": "搜索中心",
+          "pathName": "pages/search/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "意见反馈",
+          "pathName": "pages/feedback/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/index/index",
           "scene": null
         }
       ]

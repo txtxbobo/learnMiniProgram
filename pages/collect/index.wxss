@@ -1,1 +1,41 @@
-/* pages/collect/index.wxss */
+page {
+  background-color: #f3f4f6;
+}
+.collect_main {
+  padding: 20rpx;
+}
+.collect_main .collect_title {
+  padding: 20rpx 0;
+  margin-bottom: 40rpx;
+}
+.collect_main .collect_title .collect_tips {
+  padding: 20rpx;
+  border: 1rpx solid var(--themeColor);
+  margin-right: 30rpx;
+  box-shadow: 3rpx 3rpx 10rpx rgba(0, 0, 0, 0.5);
+}
+.collect_main .collect_content {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.5);
+}
+.collect_main .collect_content .collect_img image {
+  width: 200rpx;
+}
+.collect_main .collect_content .collect_context {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.collect_main .collect_content .collect_context .collect_introduce {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collect_main .collect_content .collect_context .collect_price {
+  text-align: right;
+  color: var(--themeColor);
+}
+/*# sourceMappingURL=./index.wxss.map */

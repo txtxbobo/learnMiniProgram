@@ -81,3 +81,32 @@ export const requestPayment=(pay)=>{
     });
   })
 }
+
+// Promise形式封装getUserProfile
+
+export const getUserProfile=()=>{
+  return new Promise((resolve,reject)=>{
+    wx.getUserProfile({
+      desc:"用于获取用户信息",
+      success: (res)=> {
+        resolve(res)
+      },
+      fail: (err)=> {
+        reject(err)
+      }
+    })
+  })
+}
+
+// 防抖函数
+export function debounce(func, delay) {
+  let timer;
+  return function () {
+    let context = this;
+    let args = arguments;
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(function() {
+      func.apply(context, args);
+    }, delay);
+  };
+}

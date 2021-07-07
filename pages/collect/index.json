@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "Tabs":"../../components/Tabs/Tabs",
+    "ImageItem":"../../components/ImageItem/ImageItem"
+  },
+  "navigationBarTitleText":"商品收藏"
 }

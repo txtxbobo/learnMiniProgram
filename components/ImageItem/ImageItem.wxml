@@ -1,0 +1,13 @@
+<view class="image_item">
+    <navigator class="collect_content" wx:for="{{imageItem}}" wx:key="goods_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+    <!-- 图片容器 -->
+    <view class="collect_img">
+      <image class="" src="{{item.goods_small_logo}}" mode="widthFix" lazy-load="false"></image>
+    </view>
+    <!-- 描述去 -->
+    <view class="collect_context">
+      <view class="collect_introduce">{{item.goods_name}}</view>
+      <view class="collect_price">{{item.goods_price}}</view>
+    </view>
+  </navigator>
+</view>

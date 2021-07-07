@@ -1,2 +1,15 @@
-<!--pages/collect/index.wxml-->
-<text>pages/collect/index.wxml</text>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleItemChange">
+  <!-- 内容区 -->
+  <view class="collect_main">
+    <!-- 标题去 -->
+    <view class="collect_title">
+      <text class="collect_tips active">全部</text>
+      <text class="collect_tips">正在热卖</text>
+      <text class="collect_tips">即将上线</text>
+    </view>
+    <!-- 裂项 -->
+   <ImageItem imageItem="{{collect}}">
+      
+   </ImageItem>
+  </view>
+</Tabs>

@@ -12,12 +12,12 @@ Page({
         isActive: true,
       },
       {
-        id: 0,
+        id: 1,
         value: "销量",
         isActive: false,
       },
       {
-        id: 0,
+        id: 2,
         value: "价格",
         isActive: false,
       },
@@ -55,7 +55,8 @@ Page({
   onLoad: function (options) {
     // 保存cid
     // console.log(options);
-    this.queryParams.cid = options.cid;
+    this.queryParams.cid = options.cid||"";
+    this.queryParams.query = options.query||"";
     this.getGoddsList();
     wx.showLoading({
       title: "加载中",

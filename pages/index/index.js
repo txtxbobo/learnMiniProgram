@@ -38,9 +38,12 @@ Page({
     request({
       url: "/home/swiperdata",
     }).then((result) => {
-      // console.log(result);
+      console.log(result);
       this.setData({
-        swiperList: result.data.message,
+        swiperList: result.data.message.map((v) => ({
+          ...v,
+          navigator_new_url: v.navigator_url.replace(/main/, 'index')
+        })),
       });
     });
   },
@@ -58,9 +61,18 @@ Page({
     request({
       url: "/home/floordata",
     }).then((result) => {
-      // console.log(result);
+      let floorList = result.data.message;
+      console.log(floorList);
+      for (let i = 0; i < floorList.length; i++) {
+        floorList[i].product_list.forEach((v,j) => {
+           floorList[i].product_list[j].navigator_url = v.navigator_url.replace(
+             "?",
+             "/index?"
+           );
+        })
+      }
       this.setData({
-        floorList: result.data.message,
+        floorList
       });
     });
   }

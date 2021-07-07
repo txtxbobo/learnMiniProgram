@@ -1,9 +1,9 @@
 @font-face {
   font-family: "iconfont";
   /* Project id 2574057 */
-  src        : url('//at.alicdn.com/t/font_2574057_ofmxyy9p3vs.woff2?t=1622457504909') format('woff2'),
-    url('//at.alicdn.com/t/font_2574057_ofmxyy9p3vs.woff?t=1622457504909') format('woff'),
-    url('//at.alicdn.com/t/font_2574057_ofmxyy9p3vs.ttf?t=1622457504909') format('truetype');
+  src        : url('//at.alicdn.com/t/font_2574057_2vi763qoiak.woff2?t=1623608936010') format('woff2'),
+    url('//at.alicdn.com/t/font_2574057_2vi763qoiak.woff?t=1623608936010') format('woff'),
+    url('//at.alicdn.com/t/font_2574057_2vi763qoiak.ttf?t=1623608936010') format('truetype');
 }
 
 .iconfont {
@@ -12,6 +12,30 @@
   font-style             : normal;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shoucang:before {
+  content: "\e62a";
+}
+
+.icon-iconfontshoucang:before {
+  content: "\e60c";
+}
+
+.icon-74wodedingdan:before {
+  content: "\e64e";
+}
+
+.icon-daifukuan:before {
+  content: "\e61a";
+}
+
+.icon-tuikuan:before {
+  content: "\e62d";
+}
+
+.icon-7daishouhuo3x:before {
+  content: "\e604";
 }
 
 .icon-kefu:before {

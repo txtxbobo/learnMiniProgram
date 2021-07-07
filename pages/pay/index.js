@@ -61,7 +61,7 @@ Page({
       }
       // 存在token值时 ，开始创建订单, 获取订单编号
       // 请求头参数
-      const header = { Authorization: token };
+      // const header = { Authorization: token };
       // 准备请求体参数
       const order_price = this.data.totalPrice;
       console.log(order_price);
@@ -85,7 +85,6 @@ Page({
         url: "/my/orders/create",
         data: orderParams,
         method: "POST",
-        header: header,
       });
       const { order_number } = res.data.message;
       // 准备发起预支付的接口
@@ -93,7 +92,6 @@ Page({
         url: "/my/orders/req_unifiedorder",
         method: "POST",
         data: { order_number },
-        header,
       });
       const { pay } = orderPay.data.message;
       // 支付完成，手动删除已经被选中了的商品
@@ -106,7 +104,6 @@ Page({
         url: "/my/orders/chkOrder",
         method: "POST",
         data: { order_number },
-        header,
       });
       // 弹窗提示
       await showToast({title:"支付成功"});

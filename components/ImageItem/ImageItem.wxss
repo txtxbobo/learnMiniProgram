@@ -1,0 +1,26 @@
+/* components/ImageItem/ImageItem.wxss */
+.collect_content {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.5);
+}
+.collect_content .collect_img image {
+  width: 200rpx;
+}
+.collect_content .collect_context {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.collect_content .collect_context .collect_introduce {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collect_content .collect_context .collect_price {
+  text-align: right;
+  color: var(--themeColor);
+}
+/*# sourceMappingURL=./ImageItem.wxss.map */
